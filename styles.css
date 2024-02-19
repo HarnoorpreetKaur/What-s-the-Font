@@ -1,0 +1,149 @@
+/* Resetting default margin and padding */
+body, h1, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting default font and color */
+body {
+    background-image: url('image.avif');
+    background-size: cover; /* This ensures that the background image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    font-family: 'Roboto', Arial, sans-serif; /* Default font for paragraphs */
+    color: whitesmoke; /* Default text color */
+}
+
+/* Set blurry background image */
+.blurry-background {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styling headers */
+h1 {
+    font-family: 'Indie Flower', cursive; /* Font for headers */
+    text-align: center;
+    color: white; /* Set font color to white */
+    margin-bottom: 20px; /* Add some space below the heading */
+    font-size: 3.5em; /* Increase font size */
+    line-height: 1.5; /* Increase line height */
+    animation: fadeInScale 1.5s ease-out; /* Apply animation */
+}
+
+/* Animations for the heading */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Styling the container for paragraphs */
+main {
+    max-width: 800px; /* Limiting the width of the container */
+    margin: 0 auto; /* Centering the container */
+}
+
+article {
+    border: 2px solid #ddd; /* Adding a border */
+    border-width: 10px;
+    border-radius: 5px; /* Adding border radius for rounded corners */
+    padding: 20px; /* Adding padding inside the box */
+}
+/* Styling the image */
+.side-image {
+    max-width: 50%; /* Set maximum width of the image */
+    max-height: 70%;
+    float: right; /* Float the image to the right */
+    margin-left: 20px; /* Add some space between the image and text */
+    border-radius: 5px; /* Adding border radius for rounded corners */
+}
+/* Styling the paragraphs */
+p {
+    font-size: 1.2em; /* Increase font size */
+    line-height: 1.6; /* Increase line height */
+    margin-bottom: 10px; /* Add some space below each paragraph */
+}
+
+/* Emphasizing text */
+.First p {
+    font-family: 'Pacifico', cursive;
+    text-indent: 0; /* Reset text indentation for the first paragraph */
+}
+
+.Second p {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.3em; /* Increase font size */
+    text-indent: 40px; /* Indent the text for the second paragraph */
+
+}
+
+.Third p {
+    font-family: 'Indie Flower', cursive; /* Changing font family */
+    font-style: italic; /* Making the text italic */
+    text-indent: 80px; /* Indent the text for the second paragraph */
+}
+/* Keyframes for blinking animation */
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Apply the animation to paragraphs */
+.First p {
+    opacity: 1; /* Initially show the first paragraph */
+}
+
+.Second p, .Third p {
+    opacity: 0; /* Initially hide other paragraphs */
+}
+
+/* Delay the animation for each paragraph */
+.First p {
+    animation: blink 2s ; /* Apply the blink animation to the first paragraph */
+}
+
+.Second p {
+    animation: blink 2s infinite; /* Apply the blink animation to the second paragraph */
+    animation-delay: 2s; /* Delay the animation for the third paragraph */
+}
+
+.Third p {
+    animation: blink 2s infinite; /* Apply the blink animation to the third paragraph */
+    animation-delay: 4s; /* Delay the animation for the third paragraph */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
